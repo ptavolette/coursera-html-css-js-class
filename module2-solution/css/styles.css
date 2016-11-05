@@ -1,0 +1,167 @@
+/* CSS Styling page for Module 2 exercise */
+/* - Paul Tavolette */
+
+/* Basic Styling */
+* {
+	box-sizing: border-box;
+	font-family: Helvetica, Arial, sans-serif; 
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	/* Set left and right padding for page same as inner block margin to keep things evenly spaced side-to-side */
+	padding-left: 10px;
+	padding-right: 10px
+}
+
+h1 { 
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	font-size: 175%;
+	/*border: 1px solid blue;*/ 	/* Border used for debugging */
+}
+
+section {
+	padding: 10px 20px 10px 20px;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	/* Borders on top and right are handled by containing div */
+	width: 150px;
+	float: right;		/* Anhors section to top righ of containing div */
+	text-align: center;
+	font-size: 125%;
+	font-weight: bold;
+}
+
+p {
+	padding: 10px 20px 10px 20px;
+	clear: right;		/* Forces p to be below floating section on right */
+	height: auto;   	
+}
+
+/* Container elment inside of Responsive Column containers.  Used to maintain spacing - margins */
+.inner-block {
+	margin: 10px;		/* Creates empty margin area.  Keep same value as page padding. */
+	border: 1px solid black;
+	background-color: #c1f3f3;	/* light blue */
+	height: auto;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+#section-1 {
+	background-color: #FFC0CB;	/* pink */
+}
+
+#section-2 {
+	background-color: #FF0000;	/* red */
+	color: white;
+}
+#section-3 {
+	background-color: #FFFF00;	/* yellow */
+}
+
+/* Desktop View only */
+@media (min-width: 992px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+    /*border: 1px solid green;*/	/* Border used for debugging */
+    }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+/* Tablet View only */
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+    /*border: 1px solid green;*/	/* Border used for debugging */
+  }
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+/* Mobile Phone View only - Needed to keep spacing consistant */
+@media (max-width: 767px) {
+  .col-sm-12 {
+    float: left;
+    padding-left: 30px;		/* Make left and right padding very wide to match instructors example */
+    padding-right: 30px;
+    /*border: 1px solid green;*/	/* Border used for debugging */
+  }
+
