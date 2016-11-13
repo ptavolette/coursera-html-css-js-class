@@ -1,0 +1,95 @@
+/* CSS Styling page for Module 3 exercise */
+/* - Paul Tavolette */
+
+/* Basic Styling */
+* {
+	box-sizing: border-box;
+	font-family: Helvetica, Arial, sans-serif; 
+	/*margin: 0;
+	padding: 0;*/
+}
+
+
+/* HEADER */
+#header-nav {
+	background-color: #A9F9B3;   /* Light Green */
+	border: 1px solid #0E5C18;   /* Dark Green */
+	position: relative;   /* Set to relative to anchor header left */
+}
+
+.navbar-header {
+	/*border: 1px solid red;*/		/* For debugging */
+	position: absolute;
+	left: 10px;
+}
+
+.navbar-brand {
+  padding-top: 15px;
+}
+
+.navbar-brand h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: black;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+
+#header-nav button {
+	border: 1px solid #0E5C18;   /* Dark Green */
+	background: #A9F9B3;   /* Light Green */  /* Need this to turn it back to Light Green after hover / active */
+}
+
+#header-nav button:hover, #header-nav button:active {
+	background: gold;
+}
+
+#nav-list {
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+#nav-list a {
+  	font-size: 1.2em;
+  	font-weight: bold;
+	color: black;
+	background-color: #fbffd1;	/* Very Light Yellow */
+	border: 1px solid brown;   /* Brown */
+}
+
+#nav-list a:hover {
+	background: gold;
+}
+
+#menu-title {
+	margin-bottom: 25px;
+}
+
+#main-text {
+	height: 1000px; 
+	background-color: #d1ffd8;   /* Very Light Green */
+	border: 1px solid #0E5C18;   /* Dark Green */
+	margin-bottom: 30px;
+	color: black;
+}
+
+#main-text section {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 1.3em;
+	position: relative;   /* Set to relative to anchor variable span in-line next to this section */
+}
+
+#main-text span {
+	float: right;
+	position: absolute;
+	left: 130px;
+	top: 0px;
+}
+
+#main-text p {
+	margin-left: auto;
+	margin-right: auto;
+}
+
