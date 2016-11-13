@@ -55,7 +55,7 @@
   	font-weight: bold;
 	color: black;
 	background-color: #fbffd1;	/* Very Light Yellow */
-	border: 1px solid brown;   /* Brown */
+	border: 1px solid #A52A2A;   /* Brown */
 }
 
 #nav-list a:hover {
